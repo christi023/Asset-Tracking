@@ -5,17 +5,20 @@ using System.Text;
 namespace Asset_Tracking
 {
     class Phone : Asset // inheritance
-    {     public Phone(string model, string price, double getPrice, string currency, DateTime dateTime, bool expiryProduct)
+    {
+        public Phone(string brand, string model,  DateTime purchaseDate, Office office, double purchasePrice, string currency, double currencyRate)
         {
-            Model = model;
-            Price = price;
-            DateTime = dateTime;
-            ExpiryProduct = expiryProduct;
+            Brand = brand;
+            Model = model;        
+            PurchaseDate = purchaseDate;
+            Office = office;
+            PurchasePrice = purchasePrice;
             Currency = currency;
-            GetPrice = getPrice;
+            CurrencyRate = currencyRate;
 
         }
+    } 
 
     }
-}
+
 

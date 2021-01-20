@@ -1,21 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Asset_Tracking
 {
     class Laptop : Asset
-    {public Laptop(string model, string price, double getPrice, string currency, DateTime dateTime, bool expiryProduct)
+    {
+        public Laptop(string brand, string model,  DateTime purchaseDate, Office office, double purchasePrice, string currency, double currencyRate)
         {
-            Model = model;
-            Price = price;
-            DateTime = dateTime;
-            ExpiryProduct = expiryProduct;
+            Brand = brand;
+            Model = model;           
+            PurchaseDate = purchaseDate;
+            Office = office;
+            PurchasePrice = purchasePrice;
             Currency = currency;
-            GetPrice = getPrice;
+            CurrencyRate = currencyRate;
 
         }
-
     }
 }
 

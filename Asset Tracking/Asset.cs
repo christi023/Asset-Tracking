@@ -4,13 +4,16 @@ using System.Text;
 
 namespace Asset_Tracking
 {
-   public abstract class Asset
+    class Asset
     {
-        public string Model { get; set; }
-        public string Price { get; set; }
-        public DateTime DateTime { get; set; }
-        public bool ExpiryProduct { get; set; }
+        /*   public class Office
+           { } */
+        public string Brand { get; set; }
+        public string Model { get; set; }       
+        public DateTime PurchaseDate { get; set; }
+        public Office Office { get ; set ; }
+        public double PurchasePrice { get; set; }
         public string Currency { get; set; }
-        public double GetPrice { get; set; }
+        public double CurrencyRate { get; set; }
     }
 }
